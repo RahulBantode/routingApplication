@@ -1,0 +1,39 @@
+<style>
+    .content {
+        padding-left: 30%;
+        max-width: 500px;
+        padding-right: 30%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .content-button {
+        align-content: center;
+    }
+</style>
+
+<div class="content">
+    <h3> Number Calculations </h3>
+    <div>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Input</mat-label>
+            <input matInput placeholder="Enter the number" id="number" name="number">
+        </mat-form-field>
+
+        <!-- <input type="text" id="number" name="number" placeholder="Enter the Number">-->
+        <br><br>
+
+        <div class="content-button">
+            <button type="submit" (click)="countDigitInNumber()">Count Digit</button> &nbsp;
+            <button type="submit" (click)="additionOfDigitInNumber()">Addition of Digit</button> &nbsp;
+            <button type="submit" (click)="checkNumberPallindrome()">Check Pallindrome</button> &nbsp;
+            <button type="submit" (click)="checkNumberArmstrong()">Check Armstrong</button>
+
+            <h3>--------------------------------------------------------------------------</h3>
+            <div>
+                <h4>{{ result | json }}</h4>
+            </div>
+        </div>
+    </div>
+</div>

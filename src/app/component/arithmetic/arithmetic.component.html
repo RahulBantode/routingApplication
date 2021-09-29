@@ -1,0 +1,43 @@
+<style>
+    .content {
+        padding-left: 30%;
+        max-width: 500px;
+        padding-right: 30%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .content-button {
+        align-content: center;
+    }
+</style>
+
+<div class="content">
+    <h3>Arithmetic Calculation</h3>
+    <br>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Number 1 </mat-label>
+            <input matInput placeholder="Enter the number 1" id="no1" name="no1">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Number 2</mat-label>
+            <input matInput placeholder="Enter the number 2" id="no2" name="no2">
+        </mat-form-field>
+
+        <br><br>
+
+        <div class="content-button">
+            <button type="submit" (click)="addition()">Addition</button> &nbsp;
+            <button type="submit" (click)="substraction()">Substraction</button> &nbsp;
+            <button type="submit" (click)="multiplication()">Multiplication</button> &nbsp;
+            <button type="submit" (click)="division()">Division</button>
+
+            <h3>--------------------------------------------------------------------------</h3>
+            <div>
+                <h4>{{ result | json }}</h4>
+            </div>
+        </div>
+    </div>
+</div>
